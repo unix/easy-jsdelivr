@@ -7,7 +7,7 @@
     "lint": "vue-cli-service lint",
     "build": "vue-cli-service build",
     "clear": "rm -rf dist",
-    "now-build": "NODE_ENV=production yarn run build",
+    "now-build": "NODE_ENV=production yarn run build && cp ./public/favicon.ico ./dist",
     "prepublish": "yarn run clear && yarn run build"
   },
   "dependencies": {

@@ -1,0 +1,10 @@
+logs
+*.log
+yarn-error.log*
+*.md
+dist
+LICENSE
+.gitlab-ci.yml
+node_modules/
+
+
