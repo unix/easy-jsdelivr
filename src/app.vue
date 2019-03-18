@@ -14,6 +14,7 @@ export default
   data: ->
     name: ''
     package: 'npm'
+    current_version: ''
     versions: []
     tree: {}
     version_loading: off
@@ -43,10 +44,11 @@ export default
       @tree_loading = off
 
     changeHandler: (version) ->
+      @current_version = version
       @get_files(@name, version)
 
     fileClickHandler: (event) ->
-      url = service.get_url @package, @name, event.name
+      url = service.get_url @package, "#{@name}@#{@current_version}", event.name
       await @$copyText url
       @$Toast.show "CDN url copied. `#{url}`"
 
