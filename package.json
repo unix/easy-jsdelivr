@@ -1,0 +1,50 @@
+{
+  "name": "easy-jsdelivr",
+  "version": "0.1.0",
+  "description": "A web tool for jsdelivr cdn.",
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build": "vue-cli-service build",
+    "clear": "rm -rf dist",
+    "now-build": "NODE_ENV=production yarn run build",
+    "prepublish": "yarn run clear && yarn run build"
+  },
+  "dependencies": {
+    "@zeit-ui/vue": "^0.5.1",
+    "vue": "^2.6.6",
+    "vue-clipboard2": "^0.3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.3.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-coffeescript": "^0.0.3",
+    "vue-cli-plugin-pug": "^1.0.7",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  },
+  "files": [
+    "LICENSE",
+    "dist/"
+  ],
+  "keywords": [
+    "vue component",
+    "zeit",
+    "vue ui"
+  ],
+  "license": "MIT"
+}
