@@ -6,5 +6,6 @@ dist
 LICENSE
 .gitlab-ci.yml
 node_modules/
+screenshot.jpg
 
 
