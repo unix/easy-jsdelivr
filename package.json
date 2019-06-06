@@ -11,7 +11,7 @@
     "prepublish": "yarn run clear && yarn run build"
   },
   "dependencies": {
-    "@zeit-ui/vue": "^0.5.1",
+    "@zeit-ui/vue": "^1.0.0-beta.4",
     "vue": "^2.6.6",
     "vue-clipboard2": "^0.3.0"
   },
