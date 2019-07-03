@@ -2,6 +2,7 @@
   "name": "jsdelivr",
   "version": 2,
   "alias": "jsdelivr",
+  "regions": ["hnd", "sfo"],
   "builds": [
     { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "dist" } }
   ],
